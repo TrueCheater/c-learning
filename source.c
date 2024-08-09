@@ -32,5 +32,65 @@ int main(void){
     unsigned long long ullx = 123456789llu;
     printf("The value of an unsigned long long integer is: %llu\n", ullx);
 
-    
+    float myfloat = 123.456f;   // or 123456e-3f
+    printf("The value of a floating-point variable is: %f\n", myfloat); // to print 3 decimal places use %.3f
+    double mydouble = 123.456; // or 123456e-3
+    printf("The value of a double variable is: %.3f\n", mydouble);
+    long double myld = 123456.7891;
+    printf("The value of a long double variable is: %.3Lf\n", myld);
+
+
+    // chapter 5
+    int f = 2 < 1;
+    int t = 4 > 3;
+    printf("%d\n", f);
+    printf("%d\n", t);
+
+    int e = 2 == 2;
+    int ne = 2 != 2;
+    printf("%d\n", e);
+    printf("%d\n", ne);
+
+
+    // chapter 6
+    char c_ch6 = 'A';
+    int x_ch6;
+    x_ch6 = (int)c_ch6; // explicitly convert
+    printf("the result is: %d\n", x_ch6);
+
+    int a_ch6 = 10;
+    int b_ch6 = 30;
+    double di_ch6 = a_ch6 / b_ch6;   // implicitly 
+    printf("the result is: %f\n", di_ch6);
+    double de_ch6 = (double)a_ch6 / b_ch6;   // explicitly 
+    printf("the result is: %f\n", de_ch6);
+
+
+    // chapter 7
+    int x_ch721 = 123;
+    if (x < 150) 
+    {
+        printf("true, the x is less than 150.\n");
+    }
+    else 
+    {
+        printf("false, the x is not less than 150.\n");
+    }
+
+    switch (x_ch721)
+    {
+    case 100:
+        printf("the value of x is 100.\n");
+        break;
+    case 123:
+        printf("the value of x is 123.\n");
+        break;   
+    case 456:
+        printf("the value of x is 456.\n");
+        break; 
+    default:
+        printf("no matches.\n");
+        break;
+    }
+
 }
