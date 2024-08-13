@@ -93,4 +93,27 @@ int main(void){
         break;
     }
 
+    int mycounter = 0;
+    while (mycounter < 5)
+    {
+        printf("Hello world from a while loop \n");
+        mycounter++;
+    }
+
+    int dowhilecounter = 0;
+    do
+    {
+        printf("Hello world from a do-while loop \n");
+        dowhilecounter++;
+    } while (dowhilecounter < 5);
+    
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Hello world from a for loop. Counter value: %d\n", i);
+    }
+
+
+    // chapter 9
+    
+
 }
