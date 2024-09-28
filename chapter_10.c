@@ -46,5 +46,25 @@ int main()
     }
     printf("\n");
 
+    // pointer arithmetics
+    arrp = arr;
+    printf("pointed to value:  %d\n", *arrp);
+    arrp++;
+    printf("pointed to value:  %d\n", *arrp);
+    arrp += 2;
+    printf("pointed to value:  %d\n", *arrp);
+
+    // void pointers
+    int *ip = &x;   // x = 456
+    void *vp;
+    vp = ip;
+    printf("void pointer:  %d\n", *((int *)vp));
+
+    printf("char pointer:  %p\n", (void *)cp);
+    printf("int pointer:  %p\n", (void *)ap);
+    printf("float pointer:  %p\n", (void *)fp);
+
+    int* nullp = NULL;
+    printf("null pointer:  %p\n", (void *)nullp);
     
 }
