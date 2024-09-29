@@ -67,4 +67,17 @@ int main()
     int* nullp = NULL;
     printf("null pointer:  %p\n", (void *)nullp);
     
+    // pointer to character arrays
+    char* charrp = "Hello world!";
+    printf("%s\n", charrp);
+    printf("%c\n", *charrp);
+    printf("%p\n", (void *)charrp);
+
+    // arrays of pointers
+    char *arrofp[] = {"First sentence.", "Second sentence.", "Third sentence."};
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%s\n", arrofp[i]);
+    }
+
 }
